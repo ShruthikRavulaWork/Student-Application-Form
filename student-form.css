@@ -1,0 +1,191 @@
+/* student-registration-form.css */
+body {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.form-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  padding: 36px 32px 28px 32px;
+}
+
+.student-form h1 {
+  text-align: center;
+  color: #2d3a4b;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.student-form .icon {
+  font-size: 2.2rem;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+fieldset {
+  border: 2px solid #e3e6f0;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  padding: 18px 18px 10px 18px;
+  background: #f8fafc;
+}
+
+legend {
+  font-size: 1.1rem;
+  color: #5e72e4;
+  font-weight: 600;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: nowrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+  margin-bottom: 14px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="url"],
+input[type="color"],
+input[type="file"],
+select,
+textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #b2bec3;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f8fafc;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #5e72e4;
+  background: #fff;
+  box-shadow: 0 0 0 2px #e3e6f0;
+}
+
+input[type="color"] {
+  padding: 2px 4px;
+  width: 48px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid #b2bec3;
+  background: #fff;
+}
+
+input[type="file"] {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 160px;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.checkbox-group label,
+.radio-group label {
+  font-weight: 400;
+  color: #555;
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #5e72e4;
+  margin-right: 4px;
+}
+
+input[type="range"] {
+  width: 70%;
+  margin-right: 10px;
+}
+
+output {
+  font-weight: 600;
+  color: #5e72e4;
+}
+
+.char-count {
+  font-size: 0.9em;
+  color: #888;
+  text-align: right;
+  margin-top: 2px;
+}
+
+.terms {
+  margin: 18px 0 10px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #5e72e4 60%, #825ee4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(94, 114, 228, 0.10);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #4e54c8 60%, #8f94fb 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+@media (max-width: 800px) {
+  .form-wrapper {
+    padding: 18px 6px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
