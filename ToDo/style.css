@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+#add-btn {
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 0 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#add-btn:hover {
+  background: #218838;
+}
+
+#todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+
+.todo-item.completed .text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item .text {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.todo-item .text.editing {
+  border: 1px solid #999;
+  background: white;
+  cursor: text;
+}
+
+.todo-item input.edit-input {
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #999;
+}
+
+.todo-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.delete-btn {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  color: #a71d2a;
+}
+
+.complete-btn {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.complete-btn:hover {
+  color: #1e7e34;
+}
+
+.save-btn {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.save-btn:hover {
+  color: #0056b3;
+}
+
+.cancel-btn {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  color: #494f54;
+}
