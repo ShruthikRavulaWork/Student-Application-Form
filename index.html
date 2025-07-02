@@ -1,4 +1,4 @@
-<!-- student-registration-form.html -->
+<!-- <!-- student-registration-form.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +19,11 @@
         <div class="form-row">
           <div class="form-group">
             <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="firstName" required placeholder="Enter first name" autocomplete="Hi My name is Shruthik Ravula">
+            <input type="text" placeholder="Enter first name"id="firstName" name="firstName" required>
           </div>
           <div class="form-group">
             <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="lastName" required placeholder="Enter last name" autocomplete="Hi My name is Shruthik Ravula">
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter last name">
           </div>
         </div>
         <div class="form-row">
@@ -81,7 +81,7 @@
           </div>
           <div class="form-group">
             <label for="zip">Zip Code *</label>
-            <input type="text" id="zip" name="zip" required pattern="[0-9]{6}" maxlength="6">
+            <input type="text" id="zip" name="zip" required pattern="[0-9]{6}" maxlength="6" placeholder="6-digit zip code (e.g., 560001)">
           </div>
         </div>
       </fieldset>
@@ -154,14 +154,6 @@
       </div>
       <button type="submit" class="submit-btn">Register Student</button>
     </form>
+    <script src="script.js"></script>
   </div>
-  <script>
-    // Character counter for bio
-    const bio = document.getElementById('bio');
-    const charCount = document.getElementById('charCount');
-    bio.addEventListener('input', () => {
-      charCount.textContent = `${bio.value.length}/200`;
-    });
-  </script>
 </body>
-</html>
